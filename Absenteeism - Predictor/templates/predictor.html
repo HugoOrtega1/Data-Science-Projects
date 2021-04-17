@@ -1,0 +1,48 @@
+<html>
+<head>
+<style>
+body {
+  background-color: teal;
+}
+</style>
+</head>
+    
+<body>
+<center>
+    
+   
+<h1>Absenteeism Predictor</h1>
+
+    <div> 
+<form method='POST', action="{{url_for('predict')}}">
+    <b> 
+  <select  name="ReasonCategory">
+    <option value="1">Diesis Related Absence</option>
+    <option value="2">Pregancy and Birth Related Absence</option>
+    <option value="3">Sick and poisoning Related Absence</option>
+    <option value="4">Appointment Related Absence</option>
+  </select>
+        
+        <input type="number", name='Transport Expense', placeholder='Transport Expense', required='required'>
+        <input type="number", name='Age', placeholder='Age', required='required'>
+        
+        <select  name="Education">
+    <option value="1">High School Diploma</option>
+    <option value="2">College Degree</option>
+    <option value="3">Graduate</option>
+    <option value="4">Ph.D or Doctoral</option>
+  </select>
+        
+         
+        <input type="number", name='Children', placeholder='Children', required='required'>  
+         <br><br>
+        <input = type="submit" , value='Predict' >
+        
+        
+    </b>
+    </div>
+    <img src='static\MAIN.png'alt="main">
+    </form>
+ </center>
+</body>
+</html>
